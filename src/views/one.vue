@@ -2,11 +2,19 @@
 <div>
 <!-- 头部 -->
     <header>
-            1132465465465
+           <img src="@/assets/切图/logo.png" alt="">
         <div>
-
+            <van-icon name="manager-o"/>
+          <van-icon name="wap-nav" />
         </div>
     </header>
+    
+ <van-swipe class="my-swipe" :autoplay="3000" indicator-color="white">
+  <van-swipe-item>1</van-swipe-item>
+  <van-swipe-item>2</van-swipe-item>
+  <van-swipe-item>3</van-swipe-item>
+  <van-swipe-item>4</van-swipe-item>
+</van-swipe>
 </div>
 </template>
 
@@ -98,9 +106,22 @@ export default {
 header{
     width: 100%;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     img{
         width: 50%;
         height: 20%;
     }
+    .van-icon{
+        margin-right: 20px;
+    }
 }
+
+ .my-swipe .van-swipe-item {
+    color: #fff;
+    font-size: 20px;
+    line-height: 150px;
+    text-align: center;
+    background-color: #39a9ed;
+  }
 </style>
