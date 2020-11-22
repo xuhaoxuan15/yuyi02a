@@ -9,7 +9,10 @@ import Vant from 'vant'
 import 'vant/lib/index.css'
 Vue.use(Vant)
 
-
+// import Vue from 'vue';
+import { DropdownMenu, DropdownItem } from 'vant';
+Vue.use(DropdownMenu);
+Vue.use(DropdownItem);
 
 new Vue({
   router,
