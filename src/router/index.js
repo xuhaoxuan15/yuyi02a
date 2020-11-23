@@ -48,8 +48,6 @@ const routes = [
     name: "list03",
     component: () => import('@/views/list03/list03')
   }
- 
-  
 ]
 
 const router = new VueRouter({
