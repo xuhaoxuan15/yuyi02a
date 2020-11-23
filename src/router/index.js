@@ -1,15 +1,15 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Home from '../views/Home.vue'
+// import Home from '../views/Home.vue'
 
 Vue.use(VueRouter)
 
 const routes = [
-  {
-    path: '/',
-    name: 'Home',
-    component: Home
-  },
+  // {
+  //   path: '/',
+  //   name: 'Home',
+  //   component: Home
+  // },
   {
     path: '/about',
     name: 'About',
@@ -22,6 +22,21 @@ const routes = [
     path:'/one',
     name:"one",
     component:()=> import('@/views/one')
+  },
+  {
+    path:'/site',
+    name:'site',
+    component:()=> import('@/views/site.vue')
+  },
+  {
+    path:'/details',
+    name:'details',
+    component:()=> import('@/views/details')
+  },
+  {
+    path:'/action',
+    name:'action',
+    component:()=> import('@/views/action')
   }
 ]
 
